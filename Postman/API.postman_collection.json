@@ -1,0 +1,693 @@
+{
+	"info": {
+		"_postman_id": "dfea73c2-ceea-4158-b62d-0c438ebdd3de",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Novo Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Artur Dias\",\r\n    \"email\": \"arturdias@gmail.com\",\r\n    \"telemovel\": \"919202938\",\r\n    \"password\": \"agfdsradfgadfgadfgadfgasdfgadfgafsdga\",\r\n    \"pontos\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/clientes/novo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"novo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Todos Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/clientes/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/clientes/id/6278132fe5c981992d0e9e1c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"id",
+								"6278132fe5c981992d0e9e1c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Cliente",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6278132fe5c981992d0e9e1c\",\r\n    \"nome\": \"Artur Dias\",\r\n    \"email\": \"arturdias@gmail.com\",\r\n    \"telemovel\": \"919202938\",\r\n    \"password\": \"agfdsradfgadfgadfgadfgasdfgadfgafsdga\",\r\n    \"pontos\": 0,\r\n    \"createdAt\": \"2022-05-08T18:59:59.175Z\",\r\n    \"updatedAt\": \"2022-05-08T18:59:59.175Z\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/clientes/alterar/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"alterar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Cliente por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/clientes/eliminar/6277e3ff9db0cd0db102a11c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"eliminar",
+								"6277e3ff9db0cd0db102a11c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Funcionarios",
+			"item": [
+				{
+					"name": "Novo Funcionario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nFuncionario\": \"832934sa292a94d\",\r\n    \"nome\": \"Rodrigo Pinto\",\r\n    \"email\": \"rrodrigspint@gmail.com\",\r\n    \"password\": \"sdafghsfgdsf234324sadfasdf2rawfsdf4waFFSD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/funcionarios/novo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"funcionarios",
+								"novo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Todos Funcionarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/funcionarios/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"funcionarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Funcionario por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/funcionarios/id/6277da145a5e31ad597cb201",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"funcionarios",
+								"id",
+								"6277da145a5e31ad597cb201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Funcionario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6277da145a5e31ad597cb201\",\r\n    \"nFuncionario\": \"832934sa292a94d\",\r\n    \"nome\": \"Rodrigo Pinto\",\r\n    \"email\": \"rrodrigspint@gmail.com\",\r\n    \"password\": \"sdafghsfgdsf234324sadfasdf2rawfsdf4waFFSD\",\r\n    \"createdAt\": \"2022-05-08T14:56:20.826Z\",\r\n    \"updatedAt\": \"2022-05-08T14:56:20.826Z\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/funcionarios/alterar/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"funcionarios",
+								"alterar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Funcionario por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/funcionarios/eliminar/627809f8d8feac2086d61bac",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"funcionarios",
+								"eliminar",
+								"627809f8d8feac2086d61bac"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Livros",
+			"item": [
+				{
+					"name": "Novo Livro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nLivro\": \"435263463456\",\r\n    \"nome\": \"Os 7 cavaleiros\",\r\n    \"autor\": \"Mario Swachneger\",\r\n    \"dataPublicacao\": \"2001-08-16\",\r\n    \"preco\": 17.99,\r\n    \"usado\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/livros/novo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"novo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Todos Livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/livros/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Livro por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/livros/id/6277e48d950b786e08c756f0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"id",
+								"6277e48d950b786e08c756f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Livro",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6277e445950b786e08c756ed\",\r\n    \"nLivro\": \"2243234432356\",\r\n    \"nome\": \"Os 50 dias\",\r\n    \"autor\": \"Misster King\",\r\n    \"dataPublicacao\": \"1998-05-03T00:00:00.000Z\",\r\n    \"preco\": 24.99,\r\n    \"usado\": true,\r\n    \"stock\": 1,\r\n    \"createdAt\": \"2022-05-08T15:39:49.042Z\",\r\n    \"updatedAt\": \"2022-05-08T15:39:49.042Z\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/livros/alterar/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"alterar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Livro por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/livros/eliminar/6277e445950b786e08c756ed",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"eliminar",
+								"6277e445950b786e08c756ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar/Remover stock",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nLivro\": \"435263463456\",\r\n    \"usado\": false,\r\n    \"valor\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/livros/stock/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"stock",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendas",
+			"item": [
+				{
+					"name": "Nova Venda",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pontosUsados\": 100,\r\n    \"cliente\": {\r\n        \"_id\": \"6278132fe5c981992d0e9e1c\",\r\n        \"nome\": \"Artur Dias\",\r\n        \"email\": \"arturdias@gmail.com\",\r\n        \"telemovel\": \"919202938\",\r\n        \"password\": \"agfdsradfgadfgadfgadfgasdfgadfgafsdga\",\r\n        \"pontos\": 100,\r\n        \"createdAt\": \"2022-05-08T18:59:59.175Z\",\r\n        \"updatedAt\": \"2022-05-08T19:03:44.753Z\",\r\n        \"__v\": 0\r\n    },\r\n    \"livro\": {\r\n        \"_id\": \"6277e48d950b786e08c756f0\",\r\n        \"nLivro\": \"435263463456\",\r\n        \"nome\": \"Os 7 cavaleiros\",\r\n        \"autor\": \"Mario Swachneger\",\r\n        \"dataPublicacao\": \"2001-08-16T00:00:00.000Z\",\r\n        \"preco\": 17.99,\r\n        \"usado\": false,\r\n        \"stock\": 31,\r\n        \"createdAt\": \"2022-05-08T15:41:01.213Z\",\r\n        \"updatedAt\": \"2022-05-08T18:08:44.631Z\",\r\n        \"__v\": 0\r\n    },\r\n    \"funcionario\": {\r\n        \"_id\": \"6277da145a5e31ad597cb201\",\r\n        \"nFuncionario\": \"832934sa292a94d\",\r\n        \"nome\": \"Rodrigo Pinto\",\r\n        \"email\": \"rrodrigspint@gmail.com\",\r\n        \"password\": \"sdafghsfgdsf234324sadfasdf2rawfsdf4waFFSD\",\r\n        \"createdAt\": \"2022-05-08T14:56:20.826Z\",\r\n        \"updatedAt\": \"2022-05-08T18:20:30.393Z\",\r\n        \"__v\": 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/nova",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"nova"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Todas Vendas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Venda por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/id/6278144ae5c981992d0e9e2f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"id",
+								"6278144ae5c981992d0e9e2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Venda por nLivro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/nLivro/2243234432356",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"nLivro",
+								"2243234432356"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Venda por ID Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/idCliente/6278132fe5c981992d0e9e1c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"idCliente",
+								"6278132fe5c981992d0e9e1c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Venda por emailCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/emailCliente/arturdias@gmail.com",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"emailCliente",
+								"arturdias@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Venda por nFuncionario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/nFuncionario/832934sa292a94d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"nFuncionario",
+								"832934sa292a94d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendas Livros Usados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/usados/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"usados",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendas Livros Novos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/vendas/novos/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"vendas",
+								"novos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
